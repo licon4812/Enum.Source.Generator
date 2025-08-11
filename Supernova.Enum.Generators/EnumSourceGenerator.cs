@@ -408,7 +408,7 @@ namespace {SourceGeneratorHelper.NameSpace}
                 ? found
                 : key;
             sourceBuilder.AppendLine(
-                $@"                {{{symbol}.{member.Identifier.ValueText}, ""{enumShortName ?? key}""}},");
+                $@"                {{{symbol}.{member.Identifier.ValueText}, ""{enumShortName}""}},");
         }
         sourceBuilder.Append(
             @"
