@@ -191,7 +191,6 @@ namespace {SourceGeneratorHelper.NameSpace}
         /// <returns>The display string of the <see cref=""global::{symbol.FullName()}"" /> value.</returns>
         public static string {SourceGeneratorHelper.ExtensionMethodNameToDisplay}(this {symbol.FullName()} states, string defaultValue = null)
         {{
-
             return states switch
             {{
 ");
@@ -233,7 +232,7 @@ namespace {SourceGeneratorHelper.NameSpace}
                 ? found
                 : key;
             sourceBuilder.AppendLine(
-                $@"                {symbol}.{member.Identifier.ValueText} => ""{enumShortName ?? key}"",");
+                $@"                {symbol}.{member.Identifier.ValueText} => ""{enumShortName}"",");
         }
 
         sourceBuilder.Append(
