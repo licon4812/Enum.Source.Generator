@@ -194,7 +194,7 @@ public static class Ext
             .GetCustomAttributes<DisplayAttribute>(false).FirstOrDefault();
         if (attribute == null)
             return value.ToString();
-        var propValue = attribute.GetType().GetProperty("ShortName")?.GetValue(attribute, null);
+        var propValue = attribute.GetType().GetProperty(ShortNameProperty)?.GetValue(attribute, null);
         return propValue?.ToString();
     }
 

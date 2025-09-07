@@ -105,7 +105,7 @@ namespace {SourceGeneratorHelper.NameSpace}
                         {
                             enumDescriptions.Add(member.Name, description);
                         }
-                        if (namedArgument.Key.Equals("ShortName", StringComparison.OrdinalIgnoreCase) &&
+                        if (namedArgument.Key.Equals(ShortNameKey, StringComparison.OrdinalIgnoreCase) &&
                          namedArgument.Value.Value?.ToString() is { } shortName)
                         {
                             enumShortNames.Add(member.Name, shortName);
